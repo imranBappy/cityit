@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@font-face {
+    font-family: Roboto;
+    src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
+  }
+  @font-face {
+    font-family: RobotoBolder;
+    src: url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,400&display=swap);
+  }
 :root {
     --greenColor: rgba(0, 106, 78);
     --redColor: rgba(244, 42, 65);
@@ -71,4 +78,36 @@ nav {
 .navbar__wrap ul.navbar__brand li a img {
     width: 100%;
     height: 67px
+}
+
+/* Hearder */
+
+.header__wrap{
+    height: 90vh;
+    width: 100%;
+    background-image: url(../assets/main-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.header__wrap h1{
+    margin-top: 120px;
+    font-size: 5rem;
+    line-height: 84px;
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'RobotoBolder', sans-serif;
+}
+.header__wrap h1 .title__city{
+    color:var(--redColor)
+}
+.header__wrap h1 .title__c{
+    color:var(--redColor);
+    font-size: 10rem;
+}
+.header__wrap h1 .title__park{
+    color:var(--greenColor)
 }
